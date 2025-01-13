@@ -147,7 +147,202 @@ style="background-image: url('./dist/assets/image/bgcar_img.jpeg');"
   </a>
 </div>
 
+<!-- Overlapping Cards -->
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+  <!-- Card 1 -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group" data-aos="fade-up" data-aos-delay="1000">
+    <img
+      src="/dist/assets/image/cars1.jpeg"
+      alt="Classified Listings"
+      class="w-full transform group-hover:scale-110 transition-transform duration-300"
+    />
+    <div
+      class="absolute bottom-0 left-0 w-full bg-gray-900 bg-opacity-60 text-white py-2 px-4 text-lg font-semibold"
+    >
+      CLASSIFIED LISTINGS
+    </div>
+  </div>
 
+  <!-- Card 2 -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group" data-aos="fade-up" data-aos-delay="1200">
+    <img
+      src="/dist/assets/image/cars2.jpeg"
+      alt="Dealer & Seller Profile"
+      class="w-full transform group-hover:scale-110 transition-transform duration-300"
+    />
+    <div
+      class="absolute bottom-0 left-0 w-full bg-gray-900 bg-opacity-60 text-white py-2 px-4 text-lg font-semibold"
+    >
+      DEALER & SELLER PROFILE
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group" data-aos="fade-up" data-aos-delay="1400">
+    <img
+      src="/dist/assets/image/cars3.jpeg"
+      alt="Membership Ads Listings"
+      class="w-full transform group-hover:scale-110 transition-transform duration-300"
+    />
+    <div
+      class="absolute bottom-0 left-0 w-full bg-gray-900 bg-opacity-60 text-white py-2 px-4 text-lg font-semibold"
+    >
+      MEMBERSHIP AND PAID ADS LISTINGS
+    </div>
+  </div>
+</div>
+
+<!-- Social Media Icons (Responsive) -->
+<div class="absolute right-6 md:right-8 top-1/5 md:top-1/4 flex flex-col space-y-10 text-gray-300 text-xl">
+  <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+  <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+</div>
+  
+</section>
+
+<!-- Search Section -->
+<section class="bg-white text-gray-900 relative" data-aos="fade-up" data-aos-duration="1000">
+  <div class="absolute inset-0 bg-black"></div>
+  <div class="relative z-10 mx-auto max-w-7xl py-10 px-6 lg:px-10">
+    <div class="bg-white shadow-lg rounded-lg p-6 lg:p-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 items-center">
+        <!-- Select Year -->
+        <div data-aos="fade-up" data-aos-delay="100">
+          <label class="block text-gray-600 text-sm mb-2">Select Year</label>
+          <select class="w-full border border-blue-500 rounded p-2 hover:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+            <option>--Select--</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+          </select>
+        </div>
+        <!-- Select Make -->
+        <div data-aos="fade-up" data-aos-delay="200">
+          <label class="block text-gray-600 text-sm mb-2">Select Make</label>
+          <select class="w-full border border-green-500 rounded p-2 hover:border-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
+            <option>--Select--</option>
+            <option>Toyota</option>
+            <option>Ford</option>
+            <option>Honda</option>
+            <option>Chevrolet</option>
+          </select>
+        </div>
+        <!-- Select Model -->
+        <div data-aos="fade-up" data-aos-delay="300">
+          <label class="block text-gray-600 text-sm mb-2">Select Model</label>
+          <select class="w-full border border-red-500 rounded p-2 hover:border-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">
+            <option>--Select--</option>
+            <option>Camry</option>
+            <option>Accord</option>
+            <option>Mustang</option>
+            <option>Corolla</option>
+          </select>
+        </div>
+        <!-- Select Mileage -->
+        <div data-aos="fade-up" data-aos-delay="400">
+          <label class="block text-gray-600 text-sm mb-2">Select Mileage</label>
+          <select class="w-full border border-yellow-500 rounded p-2 hover:border-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+            <option>--Select--</option>
+            <option>0-10,000 miles</option>
+            <option>10,000-50,000 miles</option>
+            <option>50,000-100,000 miles</option>
+            <option>100,000+ miles</option>
+          </select>
+        </div>
+        <!-- Select Transmission -->
+        <div data-aos="fade-up" data-aos-delay="500">
+          <label class="block text-gray-600 text-sm mb-2">Select Transmission</label>
+          <select class="w-full border border-purple-500 rounded p-2 hover:border-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-300">
+            <option>--Select--</option>
+            <option>Automatic</option>
+            <option>Manual</option>
+            <option>Semi-Automatic</option>
+          </select>
+        </div>
+        <!-- Select Condition -->
+        <div data-aos="fade-up" data-aos-delay="600">
+          <label class="block text-gray-600 text-sm mb-2">Select Condition</label>
+          <select class="w-full border border-indigo-500 rounded p-2 hover:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300">
+            <option>--Select--</option>
+            <option>New</option>
+            <option>Used</option>
+            <option>Certified Pre-Owned</option>
+          </select>
+        </div>
+      </div>
+      <!-- Price and Search Button -->
+      <div class="mt-6 flex flex-col lg:flex-row items-center justify-between" data-aos="fade-up" data-aos-delay="700">
+        <div class="text-gray-600">
+          <span class="font-semibold">Price: </span>
+          <span>₦20,000,000 - ₦50,000,000</span>
+        </div>
+        <button class="mt-4 lg:mt-0 bg-red-600 text-white px-5 py-2 rounded hover:bg-red-700 transition duration-300 ease-in-out">
+          Search Inventory
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Content Section -->
+<section class="py-16 px-6 text-center bg-white">
+  <h2 class="text-3xl font-bold mb-4 text-gray-900" data-aos="fade-up" data-aos-duration="1000">Welcome to our website</h2>
+  <h3 class="text-4xl font-extrabold text-gray-800 mb-4" data-aos="fade-up" data-aos-duration="1100">CAR DEALER</h3>
+  <p class="max-w-3xl mx-auto text-gray-500" data-aos="fade-up" data-aos-duration="1200">
+    Car Dealer is the most enticing, creative, modern and multipurpose auto dealer <em>Premium WordPress Theme</em>.
+    Suitable for any car dealer websites, business or corporate websites. The Theme has been Created especially for
+    automotive dealers, car resellers, car service stations, mechanic workshops and auto motor retailers.
+  </p>
+<!-- Features -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-10" data-aos="fade-up" data-aos-duration="900">
+  <!-- Feature 1 -->
+  <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="1000">
+    <div class="bg-gray-200 p-4 rounded-full">
+      <a class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+          <i class="fas fa-car"></i>
+        </a>
+    </div>
+    <h4 class="font-bold mt-4 text-gray-800">ALL BRANDS</h4>
+    <p class="text-gray-500 mt-2">Gallery simply dummy text lorem ipsum is of the printing.</p>
+  </div>
+
+  <!-- Feature 2 -->
+  <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="900">
+    <div class="bg-gray-200 p-4 rounded-full">
+      <a class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+        <i class="fas fa-headset"></i>
+      </a>
+    </div>
+    <h4 class="font-bold mt-4 text-gray-800">FREE SUPPORT</h4>
+    <p class="text-gray-500 mt-2">The text of the printing lorem is simply type.</p>
+  </div>
+
+  <!-- Feature 3 -->
+  <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="800">
+    <div class="bg-gray-200 p-4 rounded-full">
+      <a class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+        <i class="fas fa-handshake"></i>
+      </a>
+    </div>
+    <h4 class="font-bold mt-4 text-gray-800">DEALERSHIP</h4>
+    <p class="text-gray-500 mt-2">Printing a type of lorem ipsum dummy text.</p>
+  </div>
+
+  <!-- Feature 4 -->
+  <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="700">
+    <div class="bg-gray-200 p-4 rounded-full">
+      <a class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+        <i class="fas fa-credit-card"></i>
+      </a>
+    </div>
+    <h4 class="font-bold mt-4 text-gray-800">AFFORDABLE</h4>
+    <p class="text-gray-500 mt-2">Simply dummy text of the printing and typesetting.</p>
+  </div>
+</div>
+</section>
 
 
 
