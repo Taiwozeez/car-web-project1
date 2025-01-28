@@ -15,7 +15,7 @@
         }
       </style>
     </head>
-    <body class="bg-gray-900 text-white">
+    <body class="text-white bg-gray-900">
 <body>
 
     <title>Car Dealer Theme</title>
@@ -71,18 +71,18 @@
     </style>
 
   </head>
-  <body class="bg-gray-900 text-white">
+  <body class="text-white bg-gray-900">
     <!-- Header -->
     <header class="relative">
       <!-- Navigation Bar -->
       <nav
-        class="flex justify-between items-center bg-gray-900 px-8 py-4 shadow-md"
+        class="flex items-center justify-between px-8 py-4 bg-gray-900 shadow-md"
       >
         <div class="text-2xl font-bold">
-          <span class="text-red-600">ATHentic</span><br> CARS<i class="fas fa-car ml-2"></i> 
+          <span class="text-red-600">ATHentic</span><br> CARS<i class="ml-2 fas fa-car"></i> 
         </div>
         <ul
-          class="hidden md:flex space-x-6 text-gray-300 uppercase text-sm font-semibold"
+          class="hidden space-x-6 text-sm font-semibold text-gray-300 uppercase md:flex"
         >
           <li><a href="#" class="hover:text-white">Home</a></li>
           <li><a href="#" class="hover:text-white">Features</a></li>
@@ -91,63 +91,446 @@
           <li><a href="#" class="hover:text-white">Contact Us</a></li>
         </ul>
         <button
-          class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded"
+          class="px-5 py-2 text-white bg-red-600 rounded hover:bg-red-700"
         ><i class="fas fa-shopping-cart"></i>
           Purchase Now
         </button>
       </nav>
 
       <!-- Hamburger Button -->
-      <button id="menu-btn" class="block md:hidden text-gray-300 focus:outline-none pl-6">
-        <i class="fas fa-bars text-2xl"></i>
+      <button id="menu-btn" class="block pl-6 text-gray-300 md:hidden focus:outline-none">
+        <i class="text-2xl fas fa-bars"></i>
     </button>
 </nav>
 
 <!-- Mobile Menu -->
-<ul id="mobile-menu" class="hidden bg-gray-800 text-gray-300 uppercase text-sm font-semibold p-4 space-y-3">
+<ul id="mobile-menu" class="hidden p-4 space-y-3 text-sm font-semibold text-gray-300 uppercase bg-gray-800">
   <li><a href="#" class="hover:text-white">Home</a></li>
   <li><a href="#" class="hover:text-white">Features</a></li>
   <li><a href="#" class="hover:text-white">Solutions</a></li>
   <li><a href="#" class="hover:text-white">About Us</a></li>
   <li><a href="#" class="hover:text-white">Contact Us</a></li>
-  <li><button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded w-full">
+  <li><button class="w-full px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700">
       <i class="fas fa-shopping-cart"></i> Purchase Now
   </button></li>
 </ul>
 
       <!-- Hero Section with Background Banner -->
 <section
-class="relative flex flex-col items-start px-8 lg:px-20 pt-12 lg:pt-20 pb-16 bg-cover bg-center bg-no-repeat"
+class="relative flex flex-col items-start px-8 pt-12 pb-16 bg-center bg-no-repeat bg-cover lg:px-20 lg:pt-20"
 style="background-image: url('./dist/assets/image/bgcar_img.jpeg');"
 >
 <!-- Dark Overlay -->
 <div class="absolute inset-0 bg-black bg-opacity-70"></div>
 
 <!-- Hero Content -->
-<div class="relative z-10 p-8 rounded-lg max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
+<div class="relative z-10 max-w-4xl p-8 rounded-lg" data-aos="fade-up" data-aos-duration="1000">
   <!-- Rating and Title -->
-  <div class="flex items-center space-x-2 mb-4" data-aos="fade-right" data-aos-delay="200">
-    <span class="text-yellow-400 text-xl font-bold">★★★★★</span>
+  <div class="flex items-center mb-4 space-x-2" data-aos="fade-right" data-aos-delay="200">
+    <span class="text-xl font-bold text-yellow-400">★★★★★</span>
     <span class="text-gray-300">4.93</span>
     <span class="text-sm text-gray-400"> | 3,300+ TRUST CAR DEALER </span>
   </div>
-  <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight mb-4" data-aos="fade-left" data-aos-delay="400">
+  <h1 class="mb-4 text-4xl font-extrabold leading-tight lg:text-6xl" data-aos="fade-left" data-aos-delay="400">
       Find Your Perfect Ride - <span class="text-red-500">Drive Your</span> Dream Car Today
   </h1>
-  <p class="text-gray-300 max-w-2xl mb-6" data-aos="fade-up" data-aos-delay="600">
+  <p class="max-w-2xl mb-6 text-gray-300" data-aos="fade-up" data-aos-delay="600">
       Your Trusted Car Dealer & Mechanic Workshop Partner. Explore a Wide Range of New & Used Cars with Expert Services Tailored to Your Needs.
   </p>
   <!-- Call to Action -->
   <a
     href="#"
-    class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded shadow-md"
+    class="inline-block px-6 py-3 text-white bg-red-600 rounded shadow-md hover:bg-red-700"
     data-aos="zoom-in" data-aos-delay="800"
   > <i class="fas fa-car"></i>
     View Cars
   </a>
 </div>
 
+<!-- Overlapping Cards -->
+<div class="relative z-10 grid grid-cols-1 gap-4 mt-12 md:grid-cols-3">
+  <!-- Card 1 -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group" data-aos="fade-up" data-aos-delay="1000">
+    <img
+      src="/dist/assets/image/cars1.jpeg"
+      alt="Classified Listings"
+      class="w-full transition-transform duration-300 transform group-hover:scale-110"
+    />
+    <div
+      class="absolute bottom-0 left-0 w-full px-4 py-2 text-lg font-semibold text-white bg-gray-900 bg-opacity-60"
+    >
+      CLASSIFIED LISTINGS
+    </div>
+  </div>
 
+  <!-- Card 2 -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group" data-aos="fade-up" data-aos-delay="1200">
+    <img
+      src="/dist/assets/image/cars2.jpeg"
+      alt="Dealer & Seller Profile"
+      class="w-full transition-transform duration-300 transform group-hover:scale-110"
+    />
+    <div
+      class="absolute bottom-0 left-0 w-full px-4 py-2 text-lg font-semibold text-white bg-gray-900 bg-opacity-60"
+    >
+      DEALER & SELLER PROFILE
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="relative overflow-hidden rounded-lg shadow-lg group" data-aos="fade-up" data-aos-delay="1400">
+    <img
+      src="/dist/assets/image/cars3.jpeg"
+      alt="Membership Ads Listings"
+      class="w-full transition-transform duration-300 transform group-hover:scale-110"
+    />
+    <div
+      class="absolute bottom-0 left-0 w-full px-4 py-2 text-lg font-semibold text-white bg-gray-900 bg-opacity-60"
+    >
+      MEMBERSHIP AND PAID ADS LISTINGS
+    </div>
+  </div>
+</div>
+
+<!-- Social Media Icons (Responsive) -->
+<div class="absolute flex flex-col space-y-10 text-xl text-gray-300 right-6 md:right-8 top-1/5 md:top-1/4">
+  <a href="#" class="hover:text-blue-500"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+  <a href="#" class="hover:text-pink-500"><i class="fab fa-instagram"></i></a>
+  <a href="#" class="hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+</div>
+  
+</section>
+
+<!-- Search Section -->
+<section class="relative text-gray-900 bg-white" data-aos="fade-up" data-aos-duration="1000">
+  <div class="absolute inset-0 bg-black"></div>
+  <div class="relative z-10 px-6 py-10 mx-auto max-w-7xl lg:px-10">
+    <div class="p-6 bg-white rounded-lg shadow-lg lg:p-8">
+      <div class="grid items-center grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-6">
+        <!-- Select Year -->
+        <div data-aos="fade-up" data-aos-delay="100">
+          <label class="block mb-2 text-sm text-gray-600">Select Year</label>
+          <select class="w-full p-2 border border-blue-500 rounded hover:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+            <option>--Select--</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+          </select>
+        </div>
+        <!-- Select Make -->
+        <div data-aos="fade-up" data-aos-delay="200">
+          <label class="block mb-2 text-sm text-gray-600">Select Make</label>
+          <select class="w-full p-2 border border-green-500 rounded hover:border-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
+            <option>--Select--</option>
+            <option>Toyota</option>
+            <option>Ford</option>
+            <option>Honda</option>
+            <option>Chevrolet</option>
+          </select>
+        </div>
+        <!-- Select Model -->
+        <div data-aos="fade-up" data-aos-delay="300">
+          <label class="block mb-2 text-sm text-gray-600">Select Model</label>
+          <select class="w-full p-2 border border-red-500 rounded hover:border-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">
+            <option>--Select--</option>
+            <option>Camry</option>
+            <option>Accord</option>
+            <option>Mustang</option>
+            <option>Corolla</option>
+          </select>
+        </div>
+        <!-- Select Mileage -->
+        <div data-aos="fade-up" data-aos-delay="400">
+          <label class="block mb-2 text-sm text-gray-600">Select Mileage</label>
+          <select class="w-full p-2 border border-yellow-500 rounded hover:border-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+            <option>--Select--</option>
+            <option>0-10,000 miles</option>
+            <option>10,000-50,000 miles</option>
+            <option>50,000-100,000 miles</option>
+            <option>100,000+ miles</option>
+          </select>
+        </div>
+        <!-- Select Transmission -->
+        <div data-aos="fade-up" data-aos-delay="500">
+          <label class="block mb-2 text-sm text-gray-600">Select Transmission</label>
+          <select class="w-full p-2 border border-purple-500 rounded hover:border-purple-600 focus:outline-none focus:ring-2 focus:ring-purple-300">
+            <option>--Select--</option>
+            <option>Automatic</option>
+            <option>Manual</option>
+            <option>Semi-Automatic</option>
+          </select>
+        </div>
+        <!-- Select Condition -->
+        <div data-aos="fade-up" data-aos-delay="600">
+          <label class="block mb-2 text-sm text-gray-600">Select Condition</label>
+          <select class="w-full p-2 border border-indigo-500 rounded hover:border-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-300">
+            <option>--Select--</option>
+            <option>New</option>
+            <option>Used</option>
+            <option>Certified Pre-Owned</option>
+          </select>
+        </div>
+      </div>
+      <!-- Price and Search Button -->
+      <div class="flex flex-col items-center justify-between mt-6 lg:flex-row" data-aos="fade-up" data-aos-delay="700">
+        <div class="text-gray-600">
+          <span class="font-semibold">Price: </span>
+          <span>₦20,000,000 - ₦50,000,000</span>
+        </div>
+        <button class="px-5 py-2 mt-4 text-white transition duration-300 ease-in-out bg-red-600 rounded lg:mt-0 hover:bg-red-700">
+          Search Inventory
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Content Section -->
+<section class="px-6 py-16 text-center bg-white">
+  <h2 class="mb-4 text-3xl font-bold text-gray-900" data-aos="fade-up" data-aos-duration="1000">Welcome to our website</h2>
+  <h3 class="mb-4 text-4xl font-extrabold text-gray-800" data-aos="fade-up" data-aos-duration="1100">CAR DEALER</h3>
+  <p class="max-w-3xl mx-auto text-gray-500" data-aos="fade-up" data-aos-duration="1200">
+    Car Dealer is the most enticing, creative, modern and multipurpose auto dealer <em>Premium WordPress Theme</em>.
+    Suitable for any car dealer websites, business or corporate websites. The Theme has been Created especially for
+    automotive dealers, car resellers, car service stations, mechanic workshops and auto motor retailers.
+  </p>
+<!-- Features -->
+<div class="grid grid-cols-1 gap-8 mt-10 md:grid-cols-4" data-aos="fade-up" data-aos-duration="900">
+  <!-- Feature 1 -->
+  <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="1000">
+    <div class="p-4 bg-gray-200 rounded-full">
+      <a class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+          <i class="fas fa-car"></i>
+        </a>
+    </div>
+    <h4 class="mt-4 font-bold text-gray-800">ALL BRANDS</h4>
+    <p class="mt-2 text-gray-500">Gallery simply dummy text lorem ipsum is of the printing.</p>
+  </div>
+
+  <!-- Feature 2 -->
+  <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="900">
+    <div class="p-4 bg-gray-200 rounded-full">
+      <a class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+        <i class="fas fa-headset"></i>
+      </a>
+    </div>
+    <h4 class="mt-4 font-bold text-gray-800">FREE SUPPORT</h4>
+    <p class="mt-2 text-gray-500">The text of the printing lorem is simply type.</p>
+  </div>
+
+  <!-- Feature 3 -->
+  <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="800">
+    <div class="p-4 bg-gray-200 rounded-full">
+      <a class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+        <i class="fas fa-handshake"></i>
+      </a>
+    </div>
+    <h4 class="mt-4 font-bold text-gray-800">DEALERSHIP</h4>
+    <p class="mt-2 text-gray-500">Printing a type of lorem ipsum dummy text.</p>
+  </div>
+
+  <!-- Feature 4 -->
+  <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="700">
+    <div class="p-4 bg-gray-200 rounded-full">
+      <a class="w-8 h-8 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+        <i class="fas fa-credit-card"></i>
+      </a>
+    </div>
+    <h4 class="mt-4 font-bold text-gray-800">AFFORDABLE</h4>
+    <p class="mt-2 text-gray-500">Simply dummy text of the printing and typesetting.</p>
+  </div>
+</div>
+</section>
+
+<div class="container py-12 mx-auto text-white opacity-8" data-aos="fade-up">
+  <h1 class="mb-4 text-2xl text-center">Check out our recent cars</h1>
+  <h2 class="mb-12 text-4xl text-center line-animation">FEATURE CAR</h2>
+
+  <!-- Car Cards Grid -->
+  <div class="grid grid-cols-1 gap-6 px-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <!-- Car 1 -->
+      <div class="relative p-4 text-black bg-white rounded-lg shadow-lg hover-overlay" data-aos="fade-up" data-aos-delay="100">
+          <img src="/dist/assets/image/cars4.jpeg" alt="2017 Audi A4 Prestige" class="object-cover w-full h-40 rounded-t-lg">
+          <h3 class="mt-4 text-xl">2017 Audi A4 Prestige</h3>
+          <p class="line-through">₦48,000,000</p>
+          <p class="text-red-500">₦47,000,000</p>
+      </div>
+      <!-- Car 2 -->
+      <div class="relative p-4 text-black bg-white rounded-lg shadow-lg hover-overlay" data-aos="fade-up" data-aos-delay="200">
+          <img src="/dist/assets/image/cars5.jpeg" alt="2017 Audi A7 3.0T Prestige quattro" class="object-cover w-full h-40 rounded-t-lg">
+          <h3 class="mt-4 text-xl">2017 Audi A7 3.0T Prestige quattro</h3>
+          <p class="line-through">₦72,000,000</p>
+          <p class="text-red-500">₦71,000,000</p>
+      </div>
+      <!-- Car 3 -->
+      <div class="relative p-4 text-black bg-white rounded-lg shadow-lg hover-overlay" data-aos="fade-up" data-aos-delay="300">
+          <img src="/dist/assets/image/cars6.jpeg" alt="2017 Audi Q3 2.0T Prestige" class="object-cover w-full h-40 rounded-t-lg">
+          <h3 class="mt-4 text-xl">2017 Audi Q3 2.0T Prestige</h3>
+          <p class="line-through">₦37,000,000</p>
+          <p class="text-red-500">₦36,000,000</p>
+      </div>
+      <!-- Car 4 -->
+      <div class="relative p-4 text-black bg-white rounded-lg shadow-lg hover-overlay" data-aos="fade-up" data-aos-delay="400">
+          <img src="/dist/assets/image/cars7.jpeg" alt="2017 Audi Q7 3.0T Premium quattro" class="object-cover w-full h-40 rounded-t-lg">
+          <h3 class="mt-4 text-xl">2017 Audi Q7 3.0T Premium quattro</h3>
+          <p class="line-through">₦67,000,000</p>
+          <p class="text-red-500">₦66,000,000</p>
+      </div>
+<!-- Car 5 -->
+<div class="relative p-4 text-black bg-white rounded-lg shadow-lg hover-overlay" data-aos="fade-up" data-aos-delay="500">
+  <img src="/dist/assets/image/cars8.jpeg" alt="2017 Audi A4 Prestige" class="object-cover w-full h-40 rounded-t-lg">
+  <h3 class="mt-4 text-xl">2017 Audi A4 Prestige</h3>
+  <p class="line-through">₦50,000,000</p>
+  <p class="text-red-500">₦48,000,000</p>
+</div>
+<!-- Car 6 -->
+<div class="relative p-4 text-black bg-white rounded-lg shadow-lg hover-overlay" data-aos="fade-up" data-aos-delay="600">
+  <img src="/dist/assets/image/cars9.jpeg" alt="2017 Audi A7 3.0T Prestige quattro" class="object-cover w-full h-40 rounded-t-lg">
+  <h3 class="mt-4 text-xl">2017 Audi A7 3.0T Prestige quattro</h3>
+  <p class="line-through">₦72,000,000</p>
+  <p class="text-red-500">₦70,000,000</p>
+</div>
+<!-- Car 7 -->
+<div class="relative p-4 text-black bg-white rounded-lg shadow-lg hover-overlay" data-aos="fade-up" data-aos-delay="700">
+  <img src="/dist/assets/image/cars10.jpeg" alt="2017 Audi Q3 2.0T Prestige" class="object-cover w-full h-40 rounded-t-lg">
+  <h3 class="mt-4 text-xl">2017 Audi Q3 2.0T Prestige</h3>
+  <p class="line-through">₦37,000,000</p>
+  <p class="text-red-500">₦36,000,000</p>
+</div>
+<!-- Car 8 -->
+<div class="relative p-4 text-black bg-white rounded-lg shadow-lg hover-overlay" data-aos="fade-up" data-aos-delay="800">
+  <img src="/dist/assets/image/cars11.jpeg" alt="2017 Audi Q7 3.0T Premium quattro" class="object-cover w-full h-40 rounded-t-lg">
+  <h3 class="mt-4 text-xl">2017 Audi Q7 3.0T Premium quattro</h3>
+  <p class="line-through">₦67,000,000</p>
+  <p class="text-red-500">₦65,000,000</p>
+</div>
+</div>
+</div>
+
+ <!-- AOS Scroll Reveal Section -->
+ <div class="w-full py-12" data-aos="fade-up" data-aos-duration="1000">
+  <div class="flex flex-wrap items-center justify-center w-full p-8 bg-white rounded-lg shadow-lg">
+      <!-- Image Section Left -->
+      <div class="w-full p-2 md:w-1/4" data-aos="fade-right" data-aos-delay="200">
+          <img src="/dist/assets/image/promo_cars.png" alt="Porsche Boxster" class="w-full h-auto rounded-lg">
+      </div>
+      <!-- Text Section -->
+      <div class="w-full text-center md:w-1/2" data-aos="fade-up" data-aos-delay="400">
+          <h1 class="mb-4 text-6xl font-bold text-red-600 shake-slow">PROMO</h1>
+          <p class="mb-2 text-lg text-gray-600">Get the Porsche You always Wanted</p>
+          <p class="mb-2 text-4xl font-bold text-red-600">₦2 Million</p>
+          <p class="mb-2 text-lg text-gray-600">per month</p>
+          <p class="mb-6 text-lg text-gray-600">LIMITED TIME OFFER!</p>
+          <a href="#" class="font-bold text-red-600 hover:underline">READ MORE</a>
+      </div>
+      <!-- Image Section Right -->
+      <div class="w-full p-2 md:w-1/4" data-aos="fade-left" data-aos-delay="600">
+          <img src="/dist/assets/image/promo_cars1.png" alt="Porsche Boxster" class="w-full h-auto rounded-lg">
+      </div>
+  </div>
+</div>
+
+<div class="py-12 text-gray-900 bg-white">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+          <h2 class="text-base font-semibold tracking-wide text-red-600 uppercase">What Our Happy Clients say about us</h2>
+          <p class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">OUR TESTIMONIAL</p>
+      </div>
+      <div class="mt-10">
+          <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+              <div class="p-6 transition duration-300 transform bg-gray-100 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-red-50" data-aos="fade-up" data-aos-delay="300">
+                  <img class="object-cover w-full h-40 rounded-t-lg" src="/dist/assets/image/cars6.jpeg" alt="Red Car">
+                  <div class="mt-6 text-center">
+                      <img class="w-16 h-16 mx-auto rounded-full" src="/dist/assets/image/testimony1.jpeg" alt="Michael Bean">
+                      <h3 class="mt-4 text-lg font-medium leading-6 text-gray-900">Tony Elumelu</h3>
+                      <!-- <p class="text-red-600">Auto Dealer</p> -->
+                      <p class="mt-4 text-base leading-6 text-gray-500">The first thing to remember about success is that it is a process - nothing more, nothing less. There is really no magic to it and it's not reserved only for a select few.</p>
+                  </div>
+              </div>
+              <div class="p-6 transition duration-300 transform bg-gray-100 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-red-50" data-aos="fade-up" data-aos-delay="400">
+                  <img class="object-cover w-full h-40 rounded-t-lg" src="/dist/assets/image/cars11.jpeg" alt="Black Car">
+                  <div class="mt-6 text-center">
+                      <img class="w-16 h-16 mx-auto rounded-full" src="/dist/assets/image/testimony2.jpeg" alt="Joanna Williams">
+                      <h3 class="mt-4 text-lg font-medium leading-6 text-gray-900">Michael Otedola</h3>
+                      <!-- <p class="text-red-600">Car Enthusiast</p> -->
+                      <p class="mt-4 text-base leading-6 text-gray-500">Success is a journey, not a destination. The doing is often more important than the outcome. A great deal of pressure and stress can be alleviated by knowing this and living by it.</p>
+                  </div>
+              </div>
+              <div class="p-6 transition duration-300 transform bg-gray-100 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl hover:bg-red-50" data-aos="fade-up" data-aos-delay="500">
+                  <img class="object-cover w-full h-40 rounded-t-lg" src="/dist/assets/image/cars9.jpeg" alt="Blue Car">
+                  <div class="mt-6 text-center">
+                      <img class="w-16 h-16 mx-auto rounded-full" src="/dist/assets/image/testimony3.jpeg" alt="Samuel Green">
+                      <h3 class="mt-4 text-lg font-medium leading-6 text-gray-900">Aliko Dangote</h3>
+                      <!-- <p class="text-red-600">Mechanic</p> -->
+                      <p class="mt-4 text-base leading-6 text-gray-500">True success is a result of consistent and dedicated effort. Every failure is a step closer to achieving your ultimate goal. Keep pushing forward with determination and persistence.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+<section class="py-12 bg-gray-900">
+  <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+      <div class="mb-8 text-center text-white">
+          <h2 class="text-2xl font-extrabold tracking-tight sm:text-3xl">Find Us Here</h2>
+          <p class="mt-2 text-lg">Visit our dealership and explore our amazing car collection. We're easy to find!</p>
+      </div>
+  </div>
+
+  <!-- Map -->
+  <div class="relative w-full h-96">
+    <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.115246115249!2d-122.42643868467772!3d37.77492917975852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c8debd911%3A0x5b7f705cf8b2254d!2s220%20E%20Front%20St%2C%20Burlington%2C%20NC%2027215%2C%20USA!5e0!3m2!1sen!2sin!4v1605243581245!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+
+<div class="mt-8 text-center text-white">
+  <p class="text-lg">We look forward to seeing you! Feel free to reach out if you need directions or more info.</p>
+</div>
+</section>
+
+<footer class="p-8 text-white text-gray-900 bg-black bg-opacity-95" style="background-image: url('./dist/assets/image/bgcar_img.jpeg'); background-size: cover; background-position: center;">
+  <div class="container grid grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-4">
+      <!-- Contact Information -->
+      <div>
+          <p class="mb-4 text-lg text-gray-200">We provide everything you need to build an amazing dealership website developed especially for car sellers, dealers, or auto motor retailers.</p>
+          <p class="mb-2"><i class="fas fa-map-marker-alt"></i> 220E Ade St. Taiwo Hall, Lagos</p>
+          <p class="mb-2"><i class="fas fa-phone"></i> +2340000000000</p>
+          <p><i class="fas fa-envelope"></i> aaaaaaaaaa@.com</p>
+      </div>
+      <!-- Useful Links -->
+      <div>
+        <h3 class="mb-4 text-xl font-semibold text-gray-100">Useful Links</h3>
+        <ul>
+            <li class="mb-2"><a href="#" class="text-gray-300 hover:underline">Change Oil and Filter</a></li>
+            <li class="mb-2"><a href="#" class="text-gray-300 hover:underline">Brake Pads Replacement</a></li>
+            <li class="mb-2"><a href="#" class="text-gray-300 hover:underline">Timing Belt Replacement</a></li>
+            <li class="mb-2"><a href="#" class="text-gray-300 hover:underline">Pre-purchase Car Inspection</a></li>
+            <li><a href="#" class="text-gray-300 hover:underline">Starter Replacement</a></li>
+        </ul>
+    </div>
+
+<!-- Recent Posts -->
+<div>
+  <h3 class="mb-4 text-xl font-semibold text-gray-100">Recent Posts</h3>
+  <ul>
+      <li class="mb-2"><a href="#" class="text-gray-300 hover:underline">Buy your dream car <span class="text-gray-400">May 17, 2021</span></a></li>
+      <li><a href="#" class="text-gray-300 hover:underline">Does Your Life Lack Meaning <span class="text-gray-400">May 17, 2021</span></a></li>
+  </ul>
+</div>
+
+<!-- Newsletter Subscription -->
+<div>
+  <h3 class="mb-4 text-xl font-semibold text-gray-100">Subscribe Our Newsletter</h3>
+  <p class="mb-4 text-gray-200">Keep up on our always evolving products features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+  <input type="email" placeholder="Enter your Email" class="w-full p-2 mb-2 text-white bg-gray-800 rounded-md">
+  <button class="px-4 py-2 text-white bg-red-600 rounded-md hover:bg-red-700">Subscribe</button>
+</div>
+</div>
+      
+</footer>
 
 
 
@@ -155,36 +538,32 @@ style="background-image: url('./dist/assets/image/bgcar_img.jpeg');"
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <!-- <script>
-  AOS.init(); // Initialize AOS library
+  AOS.init(); 
 </script> -->
 
 <!-- AOS Initialization -->
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1000, // Animation duration (1 second)
-    once: true, // Trigger animation only once
+    duration: 1000, 
+    once: true, 
   });
-</script>
 
-<script>
-  // Check if the screen width is greater than 768px (not mobile or tablet)
+  
   if (window.innerWidth > 768) {
     AOS.init({
-      duration: 1000, // Animation duration (1 second)
-      once: true, // Trigger animation only once (on page load)
-      startEvent: 'load', // Trigger animation when page is fully loaded
+      duration: 1000, 
+      once: true, 
+      startEvent: 'load', 
     });
   } else {
-    // If it's a mobile or tablet screen, disable AOS
+    
     AOS.init({
-      disable: true, // Disable animations on mobile
+      disable: true, 
     });
   }
-</script>
 
 
-<script>
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
